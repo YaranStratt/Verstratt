@@ -1,0 +1,44 @@
+{
+  "lang":"nl",
+  "name":"pipeline",
+  "version":"0.0.0",
+  "spacy_version":">=3.1.2,<3.2.0",
+  "description":"",
+  "author":"",
+  "email":"",
+  "url":"",
+  "license":"",
+  "spacy_git_version":"e1f88de72",
+  "vectors":{
+    "width":0,
+    "vectors":0,
+    "keys":0,
+    "name":null
+  },
+  "labels":{
+    "ner":[
+      "Functie",
+      "Geboortedatum",
+      "Naam",
+      "Opleidingen",
+      "Periode",
+      "Plaats",
+      "Verantwoordelijkheden",
+      "Werkgever"
+    ],
+    "tok2vec":[
+
+    ]
+  },
+  "pipeline":[
+    "ner",
+    "tok2vec"
+  ],
+  "components":[
+    "ner",
+    "tok2vec"
+  ],
+  "disabled":[
+
+  ]
+}
