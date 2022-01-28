@@ -120,7 +120,6 @@ def updateModel():
     print_doc_entities(doc)
     #sla het model op in de huidige folder
     nlp.to_disk(os.getcwd())
-    TRAIN_DATA = []
 #set label knop
 button = tk.Button(ws, text="Set label", command=OnButton)
 button.pack()
