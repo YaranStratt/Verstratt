@@ -6,7 +6,6 @@ from spacy.tokens import Doc
 from spacy.training import Example
 import spacy
 import os
-
 #volledige training data lijst in plaats van laatste element
 labelList = ['Naam', 'Geboortedatum', 'Plaats', 'Werkgever', 'Periode', 'Opleidingen', 'Functie', "Verantwoordelijkheden"]
 def print_doc_entities(_doc: Doc):
@@ -16,7 +15,6 @@ def print_doc_entities(_doc: Doc):
             print(f"     {_ent.text} {_ent.label_}")
     else:
         print("     NONE")
-
 def openFile():
     #open een directory. Alle bestanden met .docx of .pdf kunnen worden geopend
     tf = filedialog.askopenfilename(
@@ -122,6 +120,7 @@ def updateModel():
     print_doc_entities(doc)
     #sla het model op in de huidige folder
     nlp.to_disk(os.getcwd())
+    TRAIN_DATA = []
 #set label knop
 button = tk.Button(ws, text="Set label", command=OnButton)
 button.pack()
